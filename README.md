@@ -66,6 +66,12 @@ solo5-hvt --net:service=tap0 -- ./_build/solo5/src/uniko.exe --solo5:quiet
 
 _Let's Hack_.
 
+```shell
+code . # using code
+emacs . & # even better, using Emacs
+your-editor . # your "other" editor
+```
+
 ## Additional references
 
 - [OCaml.org help](https://ocaml.org/docs)
