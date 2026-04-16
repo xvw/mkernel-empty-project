@@ -5,7 +5,7 @@
  (foreign_stubs
   (language c)
   (names manifest))
- (libraries mkernel))
+ (libraries mkernel mirage-crypto-rng-mkernel mnet gmp vifu tyxml uniko.util))
 
 (rule
  (targets manifest.c)

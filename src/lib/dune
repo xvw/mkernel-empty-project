@@ -1,0 +1,4 @@
+(library
+ (name util)
+ (public_name uniko.util)
+ (libraries mkernel mirage-crypto-rng-mkernel mnet vifu))
