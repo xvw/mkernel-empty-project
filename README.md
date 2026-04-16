@@ -64,6 +64,17 @@ dune build src/uniko.exe # compile the unikernel
 solo5-hvt --net:service=tap0 -- ./_build/solo5/src/uniko.exe --solo5:quiet
 ```
 
+# Regenerate the manifest
+
+We seen that `dune exec src/uniko.exe` prints the `manifest` in JSON, so we can use: 
+
+```shell
+dune exec src/uniko.exe > src/manifest.json
+```
+
+to update the manifest based on the capabilities being used.
+
+
 _Let's Hack_.
 
 ```shell

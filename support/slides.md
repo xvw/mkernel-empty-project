@@ -241,7 +241,8 @@ workshop has convinced you._)
 
 # First Unikernel, Hello World
 
-- dune/opam and vendor
+- dune/opam and vendor (**explain the need for vendor, for
+  cross-compilation reasons instead of a strong packaging policy**)
 - source code
 
 # Second Unikernel, Our first server
