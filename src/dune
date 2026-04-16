@@ -1,0 +1,23 @@
+(executable
+ (name uniko)
+ (public_name uniko)
+ (link_flags :standard -cclib "-z solo5-abi=hvt")
+ (foreign_stubs
+  (language c)
+  (names manifest))
+ (libraries mkernel))
+
+(rule
+ (targets manifest.c)
+ (deps manifest.json)
+ (enabled_if
+  (= %{context_name} "solo5"))
+ (action
+  (run solo5-elftool gen-manifest manifest.json manifest.c)))
+
+(rule
+ (targets manifest.c)
+ (enabled_if
+  (= %{context_name} "default"))
+ (action
+  (write-file manifest.c "")))
