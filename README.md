@@ -1,11 +1,19 @@
 # mkernel-empty-project
 
 > A very simple skeleton for drafting your first Unikernel using
-> Mkernel (LambdaNantes Workshop)
+> Mkernel (mostly some material for Workshops)
 
 ## Set-up
 
-First we will fetch all dependencies:
+The first step is to install [OCaml and
+OPAM](https://ocaml.org/install#linux_mac_bsd).
+
+> Sometimes, your distribution may force you to use an older version
+> of OPAM; you can follow the instructions on [this
+> page](https://opam.ocaml.org/blog/opam-2-5-1/) to update it.
+
+Next, you can clone this project and from the root of the repository,
+you can fetch all dependencies (including a dev-setup):
 
 ```shell
 opam switch create . --deps-only --with-dev-setup -y
